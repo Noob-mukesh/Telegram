@@ -28,6 +28,33 @@
          "description": "Get this value from my.telegram.org/apps.",
          "required": true,
          "value": ""
+      },
+      
+      "BOT_NAME": {
+        "description": "Enter the Heroku app name here (Must an exact same name with your input above).",
+        "required": true,
+        "value": "mukeshTestbot"
+      },
+      "OWNER_USERNAME": {
+         "description": "Your username without the @",
+         "value": "Itz_mst_boi"
+      },
+      "SUPPORT_CHAT": {
+         "description": "Your Telegram support group chat username where your users will go and bother you with shit But be like: MyGroupChatUsernameBlah. If this ever points to Fallen Support than consider you made an enemy.",
+         "required": true,
+         "value": "worldwide_friend_zone"
+      },
+      
+      "EVENT_LOGS": {
+         "description": "Event logs channel to note down important bot level events, recommend to make this public. ex: '-123456'",
+         "required": true,
+         "value": "-1001613182747"
+      },
+      "JOIN_LOGGER": {
+         "description": "A channel where bot will print who added it to what group, useful during debugging or spam handling.",
+         "required": true,
+         "value": "-1001613182747"
+      },      
         
       },
       "OWNER_ID": {
