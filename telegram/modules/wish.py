@@ -5,6 +5,7 @@ from telegram.modules.commands import command
 from telegram.modules.commands import commandpro
 from pyrogram import Client, filters
 from pyrogram import filters
+from pyrogram.types import Message
 
 BOT_USERNAME = "mukesh_bot"
 WISH_STRINGS = [
