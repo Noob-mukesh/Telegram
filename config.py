@@ -14,3 +14,4 @@ NO_LOAD = ["rss", "cleaner", "connection", "math"]
 WEBHOOK = False
 INFOPIC = True
 URL = None
+BOT_NAME = getenv("BOT_NAME", "MUKESH")
