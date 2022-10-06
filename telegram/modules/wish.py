@@ -102,7 +102,15 @@ async def lel(bot, message):
     await asyncio.sleep(0.5)
     return await message.reply_text(text=ran)
 
-
+@Client.on_message(command(["love"]) & ~filters.edited)
+async def ping_pong(client: Client, message: Message):
+    start = time()
+    m_reply = await message.reply_text("..... 👀")
+    ran = random.choice(WISH_STRINGS)
+    await bot.send_chat_action(message.chat.id, "typing")
+    await asyncio.sleep(0.5)
+    return await message.reply_text(text=ran)
+    
 __mod_name__ = "ᴡɪsʜ"
 
 __help__ = """
