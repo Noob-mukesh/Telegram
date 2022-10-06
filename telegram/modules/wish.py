@@ -1,11 +1,13 @@
 # Credit Noob-Mukesh
 import asyncio
 import random
-
+from telegram.modules.commands import command
+from telegram.modules.commands import commandpro
+from pyrogram import Client, filters
 from pyrogram import filters
 
 BOT_USERNAME = "mukeshbot"
-wish_STRINGS = [
+WISH_STRINGS = [
     "Happy Rakshabandhan Day",
     "Thanks for always being my pillar of strength. I am very blessed to have a brother like you. Happy Raksha Bandhan!",
     "A very big thank you for being my companion, my protector and being equally weird with me. You are the best brother in this world. Happy Raksha Bandhan!",
@@ -30,7 +32,7 @@ INDIAN_STRINGS = [
     "Today is a day to feel proud about being a part of this great nation. May this spirit of freedom leads us all to success and glory in life. Happy Independence Day!",
     "We may never know how it feels like to live in a free country if it was not for the bravery of our fathers. Today they deserve a big salute from us. Happy Independence Day!",
 ]
-khushi_Love = [
+KHUSHI = [
     "JAANU I LOVE U NA🥺",
     "TU HI HAIN MERI JAAN KISI AUKAT NAI HAIN JO HUMARE BICH ME AAYE🥺😏",
     "SKY IS BLUE I GOT FLU I LOVE TOO🥺",
@@ -77,15 +79,15 @@ khushi_Love = [
 ]
 
 
-@MukeshRobot.on_message(filters.command(["khushi", "love"]))
+@Client.on_message(filters.command(["khushi", "love"]))
 async def lel(bot, message):
-    ran2 = random.choice(khushi_Love)
+    ran2 = random.choice(KHUSHI)
     await bot.send_chat_action(message.chat.id, "Typing")
     await asyncio.sleep(0.5)
     return await message.reply_text(text=ran2)
 
 
-@MukeshRobot.on_message(filters.command(["Independence", "Indian"]))
+@Client.on_message(filters.command(["Independence", "Indian"]))
 async def lel(bot, message):
     ran2 = random.choice(INDIAN_STRINGS)
     await bot.send_chat_action(message.chat.id, "Typing")
@@ -93,9 +95,9 @@ async def lel(bot, message):
     return await message.reply_text(text=ran2)
 
 
-@MukeshRobot.on_message(filters.command(["rakhi", "rakshabandhan"]))
+@Client.on_message(filters.command(["rakhi", "rakshabandhan"]))
 async def lel(bot, message):
-    ran = random.choice(wish_STRINGS)
+    ran = random.choice(WISH_STRINGS)
     await bot.send_chat_action(message.chat.id, "typing")
     await asyncio.sleep(0.5)
     return await message.reply_text(text=ran)
