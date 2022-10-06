@@ -8,6 +8,21 @@ import config
 from config import API_ID, API_HASH, BOT_TOKEN, OWNER_ID
 logging.basicConfig(format='[%(levelname) 5s/%(asctime)s] %(name)s: %(message)s',
                     level=logging.WARNING)
+from telegram import (
+    BOT_NAME,
+    CERT_PATH,
+    DONATION_LINK,
+    LOGGER,
+    OWNER_ID,
+    OWNER_USERNAME,
+    SUPPORT_CHAT,
+    URL,
+    StartTime,
+    dispatcher,
+    pbot,
+    updater,
+)
+
 
 BOT_TOKEN = getenv("BOT_TOKEN")
 API_ID = getenv("API_ID")
