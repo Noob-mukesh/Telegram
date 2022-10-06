@@ -26,7 +26,7 @@ if __name__ == "__main__" :
         config.API_ID,
         config.API_HASH,
         bot_token=BOT_TOKEN,
-        plugins = dict(root="telegram/plugins")
+        plugins = dict(root="telegram/modules")
  
         )
                           
