@@ -10,8 +10,6 @@ logging.basicConfig(format='[%(levelname) 5s/%(asctime)s] %(name)s: %(message)s'
                     level=logging.WARNING)
 from config import (
     BOT_NAME,
-    CERT_PATH,
-    DONATION_LINK,
     LOGGER,
     OWNER_ID,
     OWNER_USERNAME,
