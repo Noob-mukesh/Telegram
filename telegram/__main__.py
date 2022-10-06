@@ -8,7 +8,7 @@ import config
 from config import API_ID, API_HASH, BOT_TOKEN, OWNER_ID
 logging.basicConfig(format='[%(levelname) 5s/%(asctime)s] %(name)s: %(message)s',
                     level=logging.WARNING)
-from config.py import (
+from config import (
     BOT_NAME,
     CERT_PATH,
     DONATION_LINK,
