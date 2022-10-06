@@ -1,0 +1,28 @@
+{
+      "name": "telegram",
+      "description": "A pyrogram based Telegram  bot.",
+      "logo": "https://te.legra.ph/file/2d08a8936f41627b9652d.jpg",
+      "keywords": [
+         "Pyrogram",
+         "Telegram",
+         "management"
+      ],   
+   "repository": "https://github.com/noob-mukesh/telegram",
+   "buildpacks": [
+    {
+      "url": "heroku/python"
+    }     
+  ],      
+   "env": {
+      "BOT_TOKEN": {
+         "description": "Your bot token. Get one from @BotFather duh",
+         "required": true,
+         "value": ""
+      },
+      "OWNER_ID": {
+         "description": "Your user ID as an integer.",
+         "required": true,
+         "value": ""
+      }
+   }
+}
