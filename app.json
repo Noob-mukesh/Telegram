@@ -18,6 +18,7 @@
          "description": "Your bot token. Get one from @BotFather duh",
          "required": true,
          "value": ""
+      },
       "API_ID": {
          "description": "Get this value from my.telegram.org/apps.",
          "required": true,
