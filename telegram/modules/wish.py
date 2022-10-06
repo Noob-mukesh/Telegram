@@ -105,7 +105,6 @@ async def lel(bot, message):
 
 @Client.on_message(command(["love"]) & ~filters.edited)
 async def ping_pong(client: Client, message: Message):
-    start = time()
     m_reply = await message.reply_text("..... 👀")
     ran = random.choice(WISH_STRINGS)
     await bot.send_chat_action(message.chat.id, "typing")
