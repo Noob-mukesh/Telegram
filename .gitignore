@@ -1,0 +1,4 @@
+.env
+telegram/TechQuard.session-journal
+telegram/TechQuard.session
+__pycache__/
