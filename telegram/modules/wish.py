@@ -6,7 +6,7 @@ from telegram.modules.commands import commandpro
 from pyrogram import Client, filters
 from pyrogram import filters
 
-BOT_USERNAME = "mukeshbot"
+BOT_USERNAME = "mukesh_bot"
 WISH_STRINGS = [
     "Happy Rakshabandhan Day",
     "Thanks for always being my pillar of strength. I am very blessed to have a brother like you. Happy Raksha Bandhan!",
