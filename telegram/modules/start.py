@@ -8,7 +8,7 @@ from pyrogram import Client, filters
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 
 # bot ka username yha pel do kon baar baar config se uthayega
-BOT_USERNAME = "mukeshbot"
+BOT_USERNAME = "mukesh_bot"
 
 
 
