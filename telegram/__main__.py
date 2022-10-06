@@ -15,7 +15,6 @@ from config import (
     OWNER_USERNAME,
     SUPPORT_CHAT,
     URL,
-    StartTime,
     dispatcher,
     pbot,
     updater,
