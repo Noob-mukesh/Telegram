@@ -97,5 +97,5 @@ async def ping_pong(client: Client, message: Message):
     m_reply = await message.reply_text("ᴘɪɴɢ..... 👀")
     delta_ping = time() - start
     await message.reply_photo(
-        random.choice(NIXA_IMG),
+        random.choice(MUKESH_IMG),
         caption=f"ᴘ ᴏ ɴ ɢ ! \n" f"`{delta_ping * 1000:.3f} ᴍs`")
