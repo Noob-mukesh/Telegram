@@ -9,7 +9,7 @@ from config import API_ID, API_HASH, BOT_TOKEN, OWNER_ID
 logging.basicConfig(format='[%(levelname) 5s/%(asctime)s] %(name)s: %(message)s',
                     level=logging.WARNING)
 
-from telegram.error import (
+'''from telegram.error import (
     BadRequest,
     ChatMigrated,
     NetworkError,
@@ -38,7 +38,7 @@ from config import (
     pbot,
     updater,
 )
-
+'''
 
 BOT_TOKEN = getenv("BOT_TOKEN")
 API_ID = getenv("API_ID")
